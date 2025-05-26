@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|c:\\users\\kackinmuharrem\\desktop\\asp.net8\\blogapp - kopya\\blogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|solutionrelative:blogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|c:\\users\\kackinmuharrem\\desktop\\asp.net8\\blogapp - kopya\\blogapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|solutionrelative:blogapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|c:\\users\\kackinmuharrem\\desktop\\asp.net8\\blogapp - kopya\\blogapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|solutionrelative:blogapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|c:\\users\\kackinmuharrem\\desktop\\asp.net8\\blogapp - kopya\\blogapp\\views\\users\\profileedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|solutionrelative:blogapp\\views\\users\\profileedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|c:\\users\\kackinmuharrem\\desktop\\asp.net8\\blogapp - kopya\\blogapp\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|solutionrelative:blogapp\\views\\post\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|c:\\users\\kackinmuharrem\\desktop\\asp.net8\\blogapp - kopya\\blogapp\\views\\users\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C2882B-48C7-4C74-87F6-E049152A25C3}|BlogApp\\BlogApp.csproj|solutionrelative:blogapp\\views\\users\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 286,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Program.cs",
+              "RelativeDocumentMoniker": "BlogApp\\Program.cs",
+              "ToolTip": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Program.cs",
+              "RelativeToolTip": "BlogApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:42:56.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BlogApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BlogApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T16:30:34.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfileEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Users\\ProfileEdit.cshtml",
+              "RelativeDocumentMoniker": "BlogApp\\Views\\Users\\ProfileEdit.cshtml",
+              "ToolTip": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Users\\ProfileEdit.cshtml",
+              "RelativeToolTip": "BlogApp\\Views\\Users\\ProfileEdit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T09:18:42.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Users\\Profile.cshtml",
+              "RelativeDocumentMoniker": "BlogApp\\Views\\Users\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Users\\Profile.cshtml",
+              "RelativeToolTip": "BlogApp\\Views\\Users\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T11:37:51.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "BlogApp\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "BlogApp\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T11:01:43.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Post\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BlogApp\\Views\\Post\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\kackinmuharrem\\Desktop\\Asp.Net8\\BlogApp - Kopya\\BlogApp\\Views\\Post\\Edit.cshtml",
+              "RelativeToolTip": "BlogApp\\Views\\Post\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-09T11:27:50.188Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

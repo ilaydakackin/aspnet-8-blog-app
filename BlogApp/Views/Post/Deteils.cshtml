@@ -1,0 +1,146 @@
+﻿@model Post
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="bg-white rounded-2 p-4">
+                <h1 class="h4 mb-4">@Model.Title</h1>
+                <div class="tags">
+                    @foreach (var tag in Model.Tags)
+                    {
+                        <a href="/posts/tag/@tag.url" class="badge bg-@tag.Color bg-opacity-10 text-@tag.Color mb-2 fw-bold">@tag.Text</a>
+                    }
+                </div>
+
+
+                <img class="img-fluid rounded" src="~/img/@Model.Image" style="height:400px;" />
+                <ul class="list-inline my-3">
+                    <li class="list-inline-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date-fill" viewBox="0 0 16 16">
+                            <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2" />
+                            <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a13 13 0 0 1 1.313-.805h.632z" />
+                        </svg>
+                        @Model.PublishedOn.ToString("g")
+                    </li>
+                    <li class="list-inline-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        <a href="/profile/@Model.User.UserName" >
+                            @Model.User.UserName
+                        </a>
+                      
+                    </li>
+                </ul>
+                <div>
+                    @Html.Raw(Model.Content)
+                </div>
+
+            </div>
+            <div class="bg-white rounded-2 mt-4 ">
+
+                <div class="card border-0">
+                    <div class="card-header ">
+                        <h4><span id="commentCount">@Model.Comments.Count() adet yorum</span></h4>
+                    </div>
+                    <div class="card-body" id="comments">
+
+                        @foreach (var comment in Model.Comments)
+                        {
+                            <div class="my-4 d-flex">
+                                <img src="/img/@comment.User?.Image" class="avatar rounded-circle float-start me-3" style="width:42px;height:42px; object-fit:cover;" />
+                                <div class="">
+                                    <div class="mb-2 d-flex">
+                                        <a href="/profile/@comment.User.UserName">
+                                            @comment.User.UserName
+                                        </a>
+                                        <span class="text-secondary fs-6">@comment.PublishedOn.ToString("G")</span>
+
+                                    </div>
+                                    <p>@comment.Text</p>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="card-body">
+                            <h4 class="mb-3">Yorum Ekle</h4>
+                            <form action="/Post/AddComment" method="post">
+                                <input type="hidden" id="PostId" name="PostId" value="@Model.PostId">
+                                <div class="mb-3">
+                                    <label for="Text" class="form-label">Yorum</label>
+                                    <textarea id="Text" type="text" class="form-control" rows="3" name="Text" ></textarea>
+                                </div>
+                                <div class="">
+                                    <button id="btnYorumKayit" type="submit" class="btn btn-primary ">Kaydet</button>
+                                </div>
+                            </form>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="px-3">Yorum yapmak için giriş yapmalısınız <a href="/users/login">Giriş Yap</a></p>
+                    }
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <vc:tags-menu></vc:tags-menu>
+            <vc:new-posts></vc:new-posts>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btnYorumKayit").click(function(){
+
+                $.ajax({
+                    type:'POST',
+                    url:"/Post/AddComment",
+                    datatype:'json',
+                    data:{
+                        PostId: $('#PostId').val(),
+                        UserName: $('#UserName').val(),
+                        Text: $('#Text').val()
+                    },
+                    success:function(yorum){
+                        console.log(yorum);
+                        var date = new Date(yorum.publishedOn);
+                        $("#comments").append(`
+                             <div class="my-4 d-flex">
+                                <img src="/img/${yorum.avatar}" class="avatar rounded-circle float-start me-3" style="width:42px;height:42px; object-fit:cover;" />
+                                <div class="">
+                                    <div class="mb-2 d-flex">
+                                        <h6 class="me-2">${yorum.username}</h6>
+                                        <span class="text-secondary fs-6">${date.toLocaleString('tr-TR')}</span>
+
+                                    </div>
+                                    <p>${yorum.text}</p>
+                                </div>
+                            </div>
+                        `);
+                        $("#UserName").val('');
+                        $("#Text").val('');
+
+                        var adet = parseInt($("#commentCount").text());
+                        $("#commentCount").text(`${adet + 1} yorum`);
+
+                    },
+                    error: function(err) {
+
+                    }
+                });
+                return false;
+            });
+
+        });
+
+    </script>
+}

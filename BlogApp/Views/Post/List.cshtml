@@ -1,0 +1,58 @@
+﻿@model List<Post>
+
+<div class="container">
+    <a href="/Post/Create" class="btn btn-primary">Post Ekle</a>
+    <h2>Post List</h2>
+    @foreach (var item in Model)
+    {
+        <div class="mb-3 col-lg-8 card bg-white border-0">
+            <div class="d-flex justify-content-between">
+                <div class="px-4  py-3">
+                    <h5><a href="/posts/deteils/@item.url" class="btn-link fw-bold">@item.Title</a></h5>
+                    <p class="m-0">@item.PublishedOn</p>
+                </div>
+                <div class="p-2">
+                    <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Post/Edit/@item.PostId" class="dropdown-item" type="button">
+                                Düzenle</a></li>
+                            <li><button class="dropdown-item" type="button">Sil</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="w-100" style="height:600px;">
+                <a href="/posts/deteils/@item.url" class="btn-link fw-bold">
+                    <img style="width:100%; height:100%; object-fit:cover;" src="/img/@item.Image" />
+                </a>
+               
+            </div>
+            <div class="p-4">
+                <p>@item.Description</p>
+                <p>@item.Content</p>
+
+                <div>@item.IsActive</div>
+            </div>
+
+
+        </div>
+
+    }
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+    <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2" />
+</svg>
+<i class="bi bi-bookmark"></i>
+<i class="bi bi-bookmark-fill"></i>
